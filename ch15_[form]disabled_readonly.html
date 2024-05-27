@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widths initial-scale=l.0">
+    <title>Document</title>
+    <style>
+        button{
+          margin-top:10px;;
+        } 
+        button img{
+          vertical-align:-10px;
+        }
+        input ,textarea{
+          display:block;
+          margin-top:10px;;
+          margin-bottom:10px;
+        } 
+      </style>
+</head>
+
+<body>
+  <form action="#">
+    <!-- disabled -->
+    <button type="text"value="안녕하세요" disabled>
+    <img src="C:\HTML_CSS_JavaScript\HTML\ch08_picture.png" alt="일일매출현황"> 안눌러진다.</button>
+    <br>
+        <!--  readonly  -->
+    <input type="text" value="안지워집니다." readonly>
+    <br>
+    <input type="text"maxlength = "10">
+    <br>
+    <fieldset>
+        <legend>과일 선택</legend>
+        <label for="banana">바나나</label>
+        <input type="checkbox" id="banana" name="banana" value="바나나">
+        <label for="apple">사과</label>
+        <input type="checkbox" id="apple" name="apple" value="apple" checked>
+    </fieldset>
+  </form>
+
+
+
+</body>
+
+
+</html>

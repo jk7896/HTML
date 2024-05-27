@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widths initial-scale=l.0">
+    <title>회원 가입</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>회원 가입을 환영합니다</h1>
+        <div class="user-info">
+            <ul>
+                <li>
+                    아이디:
+                    <input type="text" name="userid">
+                </li>
+                <li>
+                    이메일:
+                    <input type="email" name="email">
+                </li>
+                <li>
+                    비밀번호:
+                    <input type="password" name="password">
+                </li>
+                <li>
+                    비밀번호 확인:
+                    <input type="password" name="confirm_password">
+                </li>
+            </ul>
+        </div>
+        <div class="notification">
+            <label>
+                <input type="radio" name="notification" value="yes">
+                메일 수신
+            </label>
+            <label>
+                <input type="radio" name="notification" value="no" checked>
+                메일 수신 안 함
+            </label>
+        </div>
+        <div class="buttons">
+            <input type="button" value="가입하기">
+            <input type="button" value="취소">
+        </div>
+    </div>
+</body>
+</html>

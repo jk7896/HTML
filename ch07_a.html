@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widths initial-scale=l.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- - 링크 
+    . 문서와 문서간의 연결. a 태그 를 사용- a 태그
+    . HTML 에서 내부나 외부의 링크를 생성. 
+    . 대상 경로를 의미하는 href 속성을 필수 사용. 그 외 target, title 속성을 선택적으로 사용   
+    . href 
+    > 속성값은 대상경로의 URL 이거나 문서의 ID 속성값
+    > 대상 경로 가 명확하지 않을때 임시로 # 를 표시 하여 나중에 작성 가능. -->
+<a href="#">#은 문서를 호출 보류</a>
+<a href="https://naver.com">naver.com</a>
+<br>
+<!-- . target   
+> 대상이 연결되는 방식 (생략 가능)
+>  _blank : 새창, 주로 사용
+> _self  : 현재 페이지에서 해당 링크에 연결함 -->
+<a href="https://naver.com" target="_blank">새창 네이버</a>
+<a href="https://naver.com" target="_self">현재창 네이버</a>
+
+<!-- . title  
+> 링크를 설명할 수 있는 텍스트 작성 (생략가능) -->
+<a href="https://naver.com" title="네이버에 접속합니다.">네이버</a>
+
+<!-- - img 태그
+  . 이미지 객체를 삽입
+  . scr 속성과 alt 속성이 있음
+ . Src 속성
+    > 이미지의 경로를 입력 ( 웹브라우저에서 실행되는 HTML 파일 위치 가 기준 )
+    > ./ 현재 폴더 ,   ../ 상위 폴더 
+. alt 속성
+    > 이미지 의 설명
+    > 해당 이미지 를 속도등의 문제 로 볼 수 없을때 표현-->
+<img src="C:\HTML_CSS_JavaScript\HTML\ch08_picture.png" alt="모니터">
+
+<!-- . a 태그 와 img
+>  a 태그 사이에 img 를 삽입 시 그림을 클릭하여 페이지간 이동 기능 구현 -->
+<a href="https://naver.com" target="_blank">네이버 <img src="C:\HTML_CSS_JavaScript\HTML\ch08_picture.png" alt="모니터"></a>
+
+<!-- 이미지의 경로 src의     ./ :현재페이지 
+                           ../ : 상위폴더  -->
+
+
+
+</body>
+
+
+</html>
