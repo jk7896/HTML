@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widths initial-scale=l.0">
+    <title>가상요소 선택자</title>
+<!-- HTML 문서에 명시적으로 작성된 구성요소는 아니지만 존재하는 것처럼 취급해서 다루는 선택자 지정방법
+    after : 뒤에 요소의 스타일을 적용
+    before : 앞에 요소에 스타일 적용 -->
+    <style>
+        p::before{
+            content: "[** ";
+            color: red;
+        }
+        p::after{
+            content: " **]";
+            
+        }
+    </style>
+</head>
+
+<body>
+  
+<p>안녕하세요 가상 요소 선택자의 예제 입니다.</p>
+
+</body>
+
+
+</html>

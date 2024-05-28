@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <title>연습문제 2</title>
+   <style>
+      #container {
+         width: 520px;
+         border: 1px solid black;
+         padding: 20px 40px;
+         margin: 0 auto;
+      }
+
+      fieldset {
+         margin-bottom: 15px;
+      }
+
+      legend {
+         font-weight: bold;
+      }
+
+      ul {
+         list-style-type: none;
+      }
+
+      li {
+         line-height: 30px;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="container">
+      <thead>
+         <h1>프런트엔드 개발자 지원서 </h1>
+         <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+      </thead>
+
+      <hr>
+      <!-- 사용자 가 입력하는 데이터 를 받는 요소 form 태그 내에 위치  -->
+
+
+
+      <tbody>
+         <div>
+            <h4>개인정보</h4>
+            <ul>
+               <li>
+                  <!-- label 표시 방법 1
+                     autofocus : 웹 페이지 오픈시 자동 커서  위치
+                     placeholder : 기본 값 설명 ( 아무 값이 없을때 입력 내용에 대한 설명 )
+                     -->
+                  <label> 이름 <input type="text" autofocus placeholder="공백없이 입력하세요"></label>
+
+                  <!-- label 표시 방법 2
+                     <label for="sname"> 이름 </label>
+                     <input type="text" id="sname" autofocus placeholder="공백없이 입력하세요">-->
+               </li>
+               <li>
+                  <label for="snumber"> 연락처 </label>
+                  <input type="text" id="snum">
+               </li>
+            </ul>
+         </div>
+         <div>
+            <p><strong>지원분야</strong></p>
+            <ul>
+               <li>
+                  <label> <input type="radio" name="field" value="an"> 웹 퍼블리싱 </label>
+               </li>
+               <li>
+                  <label> <input type="radio" name="field" value="pd"> 웹 애플 개발 </label>
+               </li>
+               <li>
+                  <label> <input type="radio" name="field" value="eng"> 개발 환경 개선 </label>
+               </li>
+            </ul>
+         </div>
+
+         <div>
+            <h4>지원동기</h4>
+            <textarea id="a" cols="60" rows="5" placeholder="본사 지원 동기 적으렴"></textarea>
+            <div class="buttons">
+               <input type="submit" value="접수하기">
+               <input type="reset" value="다시 쓰기">
+            </div>
+         </div>
+      </tbody>
+      </form>
+   </div>
+</body>
+
+</html>

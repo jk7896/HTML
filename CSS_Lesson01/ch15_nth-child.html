@@ -1,0 +1,31 @@
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> 구조적 가상 클래스 선택자 </title>
+        <!--  
+           X : nth-child(n) 
+          X 요소가 부모의 모든 자식 요소 중 n 번째 자식요소 에 스타일 적용
+        -->
+        <style>
+          p:nth-child(1){
+            color:red;
+          }
+        </style>
+      </head>
+      <body>
+        <p>순서 0</p> <!-- 적용 -->
+        <div>
+          <p>순서 1</p> <!-- 적용 -->
+          <p>순서 2</p>
+        </div>
+        <div>
+          <p>순서 3</p> <!-- 적용 -->
+          <p>순서 4</p>
+        </div>
+      </body>
+      </html>
+

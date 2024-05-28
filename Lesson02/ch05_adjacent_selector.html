@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 인접 선택자 </title>
+
+    <!-- 형제 태그 를 지정하여 마지막 태그 에 스타일을 적용 
+    2개 이상의 선택자를 사용 + 기호로 구분
+    중단 될 경우 적용 되지 않는다.  -->
+    <STYLE>
+        h1 + h2
+            {
+                color: red;
+            }
+    </STYLE>
+</head>
+<body>
+    <h1>h1 시작 </h1>
+    <h2>h1 다음에 h2 니까 적용!</h2>
+
+    <hr>
+
+    <!-- 중간에 끊기면 안된다. -->
+    <h1>h1 시작</h1>
+    <p>중단</p>
+    <h2>p 다음에 h2 라 적용안되</h2>
+</body>
+</html>

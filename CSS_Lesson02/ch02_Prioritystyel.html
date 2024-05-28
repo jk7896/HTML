@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widths initial-scale=l.0">
+    <title>적용 우선수위와 개별성</title>
+    <style>
+        /* sub,id이거나 title클래스 일경우 */
+        /* sub 100점 id는 10점 만족하면 */
+        #sub,.title{
+            color: blue; font-size: 15px;
+        }
+        /* 부모요소가 name id이고 자식 요소가 sub id일 경우 */
+        /* 두개다 만족할 경우만 체크 100+100=200 */
+        #name #sub{
+            color: red; font-size: 30px;
+        }
+        /* !important 설정시 1000점을 가진다. */
+        h1{
+            color: green !important
+        }
+        /* 일반 태그 선택자 1점 */
+        h2{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+  <h1 class="title">class="title"이지만 important가 있어 우선적용</h1>
+
+  
+  <div id="name">
+    <!-- 인라인이면 1000점이기 때문에 style="color: chocolate; font-size: 50px;가 먼저 작동되게 된다. -->
+    <!-- #name #sub(color red; font-size 30px)  스타일 200점-->
+    <!-- #name #sub(color red; font-size 30px)  스타일 200점-->
+    <!-- title{color: blue; font-size: 15px;}  스타일 10점-->
+    <!-- inline style='color':chocolate;font-size:50px" 100점 -->
+    <!-- 4가지 스타일 적용되어 우선 순위가 높은 스타일이 표현된다. -->
+    <h2 id="sub" class="title" style="color: chocolate; font-size: 50px;">인라인라인이 적용하게된다.</h2>
+  </div>
+
+</body>
+
+
+</html>

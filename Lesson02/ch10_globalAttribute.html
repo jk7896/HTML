@@ -1,0 +1,71 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widths initial-scale=l.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+       <!-- 1.class 속성
+    >요소에 클래스명을 지정 할때 사용
+    CSS에서 선택자로 활용 
+    같은 페이지에서 같은이으로 중복 설정 가능-->
+    <!-- css -->
+    <style>
+        /*클래스가 red-color인 태그는 모두 적용*/
+        .red-color{
+            color: red
+        }
+    </style>
+  
+<h1 class="red-color">클래스 선택지의 결과</h1><!--class='red-color' 개발자가 임의로 지정한 색깔-->
+<h2 class="red-color">클래스 선택지의 결과</h2><!--class='red-color' 개발자가 임의로 지정한 색깔-->
+<div class="red-color"></div>
+
+
+
+
+
+
+<!-- 2. id 속성
+    . 요소에 아이디를 지정 , CSS에서 ID선택자로 활용, 중복 되면 충돌 가능성이 있다. -->
+    <style>
+        /*id가 title인 요소에 일괄 적용*/
+        #title{
+            color: green
+        }
+    </style>
+<h1 id ="title">id속성의 h1 태그</h1>
+<h2 id ="title">id속성의 h2 태그</h2>
+
+<!-- 3. title 
+    요소에 추가 정보를 기입
+    툴팁으로 표현-->
+<p>
+    <span title="타이틀은 툴팁으로 확인 가능합니다.">TITLE</span>을 사용하면 팁이 표현된다.
+</p>
+
+
+<!--4. lang
+    태그가 사용하는 언어를 표현
+    접근성과 SEO적인 요소에 영향 
+https://www.w3schools.com/tags/ref_language_codes.asp 언어 코드표-->
+<p lang="zh"></p>
+
+<!-- 5.data*속성
+    javascript에서 동적인 요소를 적용할때
+    사용자가 임의로 지정하는 속성 (존재하지 않는 속성) -->
+<p data-KEEP="mywebpage"></p>
+</body>
+
+
+</html>

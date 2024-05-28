@@ -1,0 +1,34 @@
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> 구조적 가상 클래스 선택자 </title>
+        <!--  
+          X : nth-last-of-type(n)
+          뒤에서 n 번째로 등장하는 X 요소
+        -->
+        <style>
+          p:nth-last-of-type(1){
+            color:red;
+          }
+        </style>
+      </head>
+      <body>
+        <p>lorem 0</p> <!-- 적용 -->
+        <div>
+          <p>lorem 1</p>
+          <span>span 1</span>
+          <p>lorem 2</p> <!-- 적용 -->
+        </div>
+        <div>
+          <p>lorem 3</p>
+          <span>span 2</span>
+          <span>span 3</span>
+          <p>lorem 4</p> <!-- 적용 -->
+        </div>
+      </body>
+      </html>
+
