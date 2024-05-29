@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+        }
+        .red_box{
+            background-color: red;
+
+        }
+        .blue_box{
+            background-color: blue;
+
+        }
+        .green_box{
+            background-color: green;
+            /* 절대적인 좌표 위치에 배치. 스크롤해도 고정
+                z축으로 플로팅
+                기준점 웹 브라우저 왼쪽 위 모서리로 이동*/
+            position: fixed;
+            left : 100px;
+            top: 200px;
+
+        }
+        </style>
+</head>
+<body style="margin: 0; height: 4000px;">
+    <div class="box red_box"></div>
+    <div class="box green_box"></div>
+    <div class="box blue_box"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- animation : 키프레임에 설정 된 내용에 따라 순차적으로 변환 효과를 주는 기능 -->
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation-name:bgchange; /*사용할 키 프레임 지정*/
+            animation-duration:5s ; /*지속시간*/
+            animation-delay: 3s;/*3초 기다렸다가 진행*/
+            animation-fill-mode: forwards; /*none : 애니메이션의 시작 전과 끝난후 원래의 스타일로 돌아간다. 기본값
+                                            forwards : 애니메이션이 끝난 후 애니메이션의 마지막 키프레임에서 정의된 스타일을 유지
+                                            backwards : 애니메이션이 시작되기 전 애니메이션의 첫 번째 키프레임에서 정의된 스타일을 적용
+                                            both : 애니메이션의 시작 전과 끝난 후 모두 forwards와 backwards의 효과를 적용*/
+
+            animation-iteration-count : 3 ; /*애니메이션 반복 횟수*/
+            animation-direction: reverse; /*keyframes 설정과 반대로 재생*/
+        }
+        /*키 프레임 : 애니메이션 효과를 줄 순차적 내용을 기술*/
+        @keyframes bgchange{
+            0%{background-color: red;}
+            25%{background-color: orange;}
+            50%{background-color: yellow;}
+            100%{background-color: green;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

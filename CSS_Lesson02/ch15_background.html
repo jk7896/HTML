@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+            border: 3px solid black;
+        }
+        /*요소의 배경 색상*/
+        #BGcolor{
+            width: 250px;
+            height: 100px;
+            background-color: yellow;
+        }
+        /* 요소에 이미지 등록 및 표현
+            요소의 크기 가로*세로 지정이 반드시 필요 */
+        #BGimg{
+            width: 600px;
+            height: 300px;
+            background-image: url('ch15_background.jpg');
+
+        }
+        #BGimg_over{
+            /* 요소가 이미지 보다 클 경우 자동 반복 */
+            width: 1200px;
+            height: 900px;
+            background-image: url('ch15_background.jpg');
+        }
+        #BGimg_repeat{
+            /* . background-repeat : 이미지 반복 설정
+            > no-repeat : 반복하지 않음, repeat : 반복,  round : 크기 안에 이미지 자동 조절 후 반복,  space : 원본 이미지 크기 유지. 잘리지 않도록만 반복 */
+            width: 1200px;
+            height: 600px;
+            background-image: url('ch15_background.jpg');
+            background-repeat: round;
+            border: 3px solid red;
+        }
+        #BGimg_size{
+            /* . background-size : 요소의 크기가 이미지 보다 작을때 적용하는 방법
+                > auto : 이미지 크기 유지
+                cover : 가로 세로 비율 유지 하여 채우기 (잘림)
+                contain : 가로 세로 비율유지 후 반복
+                <너비 높이> : 직접 크기 설정 (이미지를 크기에 맞출 수 있음.) */
+            width: 600px;
+            height: 500px;
+            background-image: url('ch15_background.jpg');
+            background-size: 600px 500px;
+        }
+        #BGimg_position{
+            /* . background-position : 요소 가 이미지 보다 클 경우 이미지의 위치 치정  */
+            width: 1200px;
+            height: 900px;
+            background-image: url('ch15_background.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;/*100% 하나 있을때는 왼쪽에서 오른쪽으로 100% 이동
+                                          50% 50% 가운데*/
+        }
+    </style>
+</head>
+<body>
+    <div id="BGcolor">
+        <p>배경 색상을 표현합니다</p>
+    </div>
+    <div id="BGimg">
+        <p>기본 이미지를 표현합니다.</p>
+    </div>
+    <div id="BGimg_over">
+        <p>기본 이미지를 반복 - 사이즈 조정 없이 원본이미지 반복</p>
+    </div>
+    <div id="BGimg_repeat">
+        <p>기본 이미지를 반복 </p>
+    </div>
+    <div id="BGimg_size">
+        <p>기본 이미지를 사이즈 </p>
+    </div>
+    <div id="BGimg_position">
+        <p>기본 이미지를 위치 </p>
+    </div>
+</body>
+</html>

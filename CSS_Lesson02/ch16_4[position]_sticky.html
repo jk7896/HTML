@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+        }
+        .red_box{
+            background-color: red;
+
+        }
+        .blue_box{
+            background-color: blue;
+
+        }
+        .green_box{
+            background-color: green;
+            /*  static 값 처럼 기본 흐름에 따라 배치하지만. 지정한 좌표의 임계점이 이르면 fixed 값처럼 고정
+            일정 지점가지 요소이동 
+            한계점 위아래 왼오 0px에 도착시 그 위치에 고정*/
+            position: sticky;
+            left : 100px;
+            /* 초기 기준값에서 top을 0으로 설정해야 효과 확인 */
+            top: 0px;
+
+        }
+        </style>
+</head>
+<body style="margin: 0; height: 4000px;">
+    <div class="box red_box"></div>
+    <div class="box green_box"></div>
+    <div class="box blue_box"></div>
+</body>
+</html>

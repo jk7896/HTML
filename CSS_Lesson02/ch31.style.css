@@ -1,0 +1,93 @@
+/* 구글 폰트 글꼴 추가 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto';
+}
+
+/*모든 요소에 기본 적용 되는 속성*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#login {
+    width: 304px;
+    height: 390px;
+    padding: 28px 38px;
+    /*위 아래 , 좌 우*/
+    border: 1px solid black;
+    margin: 10px auto;
+
+}
+
+/*로고 설정*/
+.google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*필드 셋의 리젠드 영역 없애기*/
+#login fieldset legend {
+    position: absolute;
+    top: -99999999px;
+}
+
+#login fieldset {
+    border: none;
+}
+
+#login button {
+    width: 228px;
+    height: 44px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bold;
+
+    /*이미지 정렬*/
+    display: flex;
+    /*레이아웃의 종류*/
+    align-items: center;
+    /*세로축을 기준으로 중앙정렬*/
+    justify-content: center;
+    /*가로축 기준으로 중앙정렬*/
+}
+
+/*or*/
+#login>fieldset+p {
+    margin: 24px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+/*아이디와 패스워드*/
+#login input {
+    width: 228px;
+    height: 44px;
+    border: 1px solid black;
+    padding: 0px 10px;
+    margin-bottom: 21px;
+}
+
+/*로그인 버튼 셋팅*/
+#login button[type="submit"] {
+    background-color: #373f37;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*비밀번호 찾기 */
+#login a {
+    text-decoration: none;
+    /*밑줄 제거*/
+    color: #2c2432;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
